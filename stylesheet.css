@@ -8,7 +8,7 @@ body
     color: #696969;
     /* 背景色を黒に */
     background-color: #ff7f7f;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 /* id="clock_frame" のdiv要素 */
 div#clock_frame, div#etClock_frame
@@ -43,5 +43,5 @@ span#clock_date ,span#etClock_date
 span#clock_time, span#etClock_time
 {
     /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の2倍にする */
-    font-size: 2em;
+    font-size: 2.5em;
 }
