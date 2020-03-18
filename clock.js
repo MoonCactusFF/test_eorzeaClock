@@ -95,6 +95,8 @@ var localToEorzea = function(){
 
 function etClock()
 {
+    var LocalDate = new Date();
+    var LocalUnix = LocalDate.getTime();
     var EorzeaDate = localToEorzea();
     EorzeaDate.setTime(LocalUnix);
     var EorzeaUnix = EorzeaDate.getTime();
@@ -113,4 +115,4 @@ function etClock()
 }
 // 上記のclock関数を1000ミリ秒ごと(毎秒)に実行する
 setInterval(clock, 1000);
-setInterval(etClock, EorzeaDate.getSpeed());
+setInterval(etClock, localToEorzea().getSpeed());
