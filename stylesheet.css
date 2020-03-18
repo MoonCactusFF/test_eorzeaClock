@@ -8,13 +8,7 @@ body
     color: green;
     /* 背景色を黒に */
     background-color: #0000FF;
-}
-
-p
-{
-  text-align: center;
-  font-family: 'Teko', cursive;
-  width: 80%;
+    font-size: 5em;
 }
 /* id="clock_frame" のdiv要素 */
 div#clock_frame, div#etClock_frame
@@ -30,8 +24,7 @@ span
     /* 本来はインライン要素であるspanをブロック要素として扱う */
     display: block;
     /* ここでは親要素であるdivの内部で右に寄せて配置させる */
-    /* 横幅を親要素であるdivの85%にする */
-    width: 80%;
+    width: 100%;
   text-align: center;
     /* フォントの種類を一番上で指定したGoogle Webフォントに設定する */
     font-family: 'Teko', cursive;
@@ -43,14 +36,12 @@ span#clock_date ,span#etClock_date
     /* この要素の中におけるテキストを右詰めにする デフォルト値のtext-align:leftを上書き */
     text-align: center;
     /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の0.5倍にする */
-    font-size: 50px;
-    /* 右のパディングの幅を親要素であるdivで設定されたフォントサイズ(px)の0.5倍にする */
-    padding-right: 10px;
+    font-size: 5em;
 }
 
 /* id="clock_time" のspan要素 */
 span#clock_time, span#etClock_time
 {
     /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の2倍にする */
-    font-size: 50px;
+    font-size: 5em;
 }
